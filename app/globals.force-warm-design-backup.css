@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f8f3e7;
+  --gold: #d6ad5b;
+  --gold-soft: #f3d891;
+  --charcoal: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(214, 173, 91, 0.35);
+}
+
+.gold-text {
+  color: var(--gold-soft);
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}

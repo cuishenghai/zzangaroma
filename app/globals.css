@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f8f3e7;
+  --gold: #d6ad5b;
+  --gold-soft: #f3d891;
+  --charcoal: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(214, 173, 91, 0.35);
+}
+
+.gold-text {
+  color: var(--gold-soft);
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+
+/* FORCE WARM SPA THEME START */
+html,
+body {
+  background:
+    radial-gradient(circle at top, #2a1b0a 0%, #120c05 42%, #030201 100%) !important;
+}
+
+main {
+  background:
+    radial-gradient(circle at top, #2a1b0a 0%, #120c05 42%, #030201 100%) !important;
+  color: #f8f3e7 !important;
+}
+
+main > section:not(:first-of-type) {
+  background:
+    linear-gradient(180deg, #171109 0%, #080604 100%) !important;
+}
+
+main > section:nth-of-type(even):not(:first-of-type) {
+  background:
+    linear-gradient(180deg, #100d08 0%, #050403 100%) !important;
+}
+
+main article,
+main form,
+main .backdrop-blur {
+  background-color: rgba(27, 19, 9, 0.88) !important;
+  border-color: rgba(214, 173, 91, 0.28) !important;
+}
+
+main h1,
+main h2,
+main h3,
+main h4 {
+  color: #fff8e8 !important;
+}
+
+main p,
+main span,
+main li {
+  color: #d8cda9;
+}
+
+main a[href="#reservation"],
+main a[href^="tel:"] {
+  background-color: #d6ad5b !important;
+  color: #080604 !important;
+}
+
+main a:hover {
+  border-color: rgba(243, 216, 145, 0.75) !important;
+}
+/* FORCE WARM SPA THEME END */

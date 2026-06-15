@@ -12,8 +12,8 @@ import {
 import ReservationForm from "./components/ReservationForm";
 
 const address = "울산 남구 달삼로 47 3층";
-const phoneNumber = "052-227-6476";
-const phoneHref = process.env.NEXT_PUBLIC_PHONE || "tel:0522276476";
+const phoneNumber = "052-268-1349";
+const phoneHref = process.env.NEXT_PUBLIC_PHONE || "tel:0522681349";
 const kakaoHref = process.env.NEXT_PUBLIC_KAKAO_URL || "https://pf.kakao.com";
 
 const programs = [
